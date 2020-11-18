@@ -113,6 +113,7 @@ def objective(trial):
         accuracy = correct / min(len(valid_loader.dataset), N_VALID_EXAMPLES)
 
         trial.report(accuracy, epoch)
+        # 中间值不及之前的accuracy，那么就可以提前终止了
 
         # Handle pruning based on the intermediate value.
         if trial.should_prune():

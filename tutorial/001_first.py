@@ -78,24 +78,24 @@ print(study.best_params)
 # To get the best parameter:
 
 
-study.best_params
+print(study.best_params)
 
 ###################################################################################################
 # To get the best value:
 
-study.best_value
+print(study.best_value)
 
 
 ###################################################################################################
 # To get the best trial:
 
-study.best_trial
+print(study.best_trial)
 
 
 ###################################################################################################
 # To get all trials:
 
-study.trials
+# print(study.trials)
 
 
 ###################################################################################################
